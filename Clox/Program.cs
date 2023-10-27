@@ -36,7 +36,7 @@ public class Clox {
     }
 
     private static void Run(string source) {
-        Scanner scanner = new Scanner();
+        Scanner scanner = new Scanner(source);
         List<Token> tokens = scanner.ScanTokens();
 
         foreach (Token token in tokens) {
