@@ -14,6 +14,6 @@ internal class Token {
     }
 
     public override string ToString() {
-        return $"{type} {lexeme} {literal}";
+        return $"{type.ToString().ToUpper()}: {lexeme} {literal}";
     }
 }
